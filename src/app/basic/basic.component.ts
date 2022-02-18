@@ -8,17 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class BasicComponent implements OnInit {
 
   name = "";
+  t: any;
   constructor() { }
-  t:any;
+
   ngOnInit(): void {
   }
 
-  greet():string{
+  greet(): string {
+    console.log("Hello World")
     return "Hello World";
   }
 
-  onChange(event:any):void{
-    this.t= event;
-    console.log(event.value)
+  onChange(): void {
+    console.log(this.name)
+    
   }
 }

@@ -1,7 +1,15 @@
-<p>{{'Hello World'}}</p>
-<p>{{'Hello World'.toLowerCase()}}</p>
-<p>{{'Hello World'.length}}</p>
-<p>{{greet()}}</p>
+<div class="col-sm-offset-2 col-sm-10">
+  <p>{{'Hello World'}}</p>
+  <p>{{'Hello World'.toLowerCase()}}</p>
+  <p>{{'Hello World'.length}}</p>
+  <p>{{greet()}}</p>
 
-<input #id (keypress)="onChange(id)"/>
+  <input [id]="t" />
+  <input [(ngModel)]="name" (ngModelChange)="onChange()" />
+  {{t}}
+  {{name}}
+
+</div>
+
+
 
